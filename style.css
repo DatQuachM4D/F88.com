@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    position: relative;
+}
+
+body section:first-child{
+    margin-top: 150px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+body button{
+    position: absolute;
+    width: 80px;
+    height: 50px;
+    right: 545px;
+    background-color: mediumseagreen;
+    font-size: 16px;
+    font-weight: bold;
+    color: black;
+    border: 1px solid mediumseagreen;
+    border-radius: 5px;
+}
+
+.count{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    margin-bottom: 20px;
+}
+
+.random-imgPaths{
+    width: 100px;
+    height: 100px;
+    border: 2px solid black;
+    gap: 10px;
+}
+
+.stage{
+    width: 135px;
+    height: 135px;
+    position: relative;
+}
+.chose-img{
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    background-size: 80px 80px;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 2px solid black;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.chose-img:hover{
+    width: 135px;
+    height: 135px;
+    background-size: 90px 90px;
+    transition: 0.3s;
+}
+
+#img-1{background-image: url(./assets/bau.png);}
+#img-2{background-image: url(./assets/cua.png);}
+#img-3{background-image: url(./assets/tom.png);}
+#img-4{background-image: url(./assets/ca.png);}
+#img-5{background-image: url(./assets/huou.png);}
+#img-6{background-image: url(./assets/ga.png);}
+
+.number{
+    width: 10px;
+    height: 10px;
+    left: 5px;
+    position: absolute;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#but-random:hover,
+#rst-count:hover{
+    opacity: 0.7;
+}
+
